@@ -403,3 +403,45 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .hero-trust { flex-direction: column; align-items: flex-start; }
   .cta-buttons { flex-direction: column; align-items: center; }
 }
+
+/* ── PRICING PAGE ──────────────────────────────── */
+.pricing-page-inner { max-width: 680px; margin: 0 auto; }
+.pricing-card { background: var(--bg-card); border: 1px solid var(--border-accent); border-radius: var(--radius-lg); padding: 40px; margin-top: 40px; position: relative; }
+.pricing-badge { display: inline-block; background: var(--orange); color: #fff; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 4px 12px; border-radius: 99px; margin-bottom: 24px; }
+.pricing-price { font-size: 64px; font-weight: 900; color: var(--text-primary); letter-spacing: -0.03em; line-height: 1; }
+.pricing-price span { font-size: 28px; font-weight: 600; color: var(--text-secondary); vertical-align: top; margin-top: 12px; display: inline-block; }
+.pricing-period { font-size: 18px; font-weight: 500; color: var(--text-secondary); margin-left: 4px; }
+.pricing-card-sub { font-size: 15px; color: var(--text-secondary); margin: 12px 0 28px; }
+.pricing-features { display: flex; flex-direction: column; gap: 12px; margin-bottom: 32px; }
+.pricing-feature { display: flex; align-items: center; gap: 12px; font-size: 15px; color: var(--text-primary); }
+.pricing-check { width: 22px; height: 22px; background: rgba(0, 194, 255, 0.12); border: 1px solid rgba(0, 194, 255, 0.3); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.pricing-check svg { width: 12px; height: 12px; stroke: var(--accent); }
+.pricing-note { text-align: center; font-size: 13px; color: var(--text-muted); margin-top: 14px; }
+.faq-section { max-width: 680px; margin: 80px auto 0; }
+.faq-section h2 { font-size: 32px; font-weight: 800; margin-bottom: 32px; }
+.faq-item { border-bottom: 1px solid var(--border); padding: 24px 0; }
+.faq-q { font-size: 16px; font-weight: 600; color: var(--text-primary); margin-bottom: 10px; }
+.faq-a { font-size: 15px; color: var(--text-secondary); line-height: 1.7; }
+
+/* ── DEMO PAGE ──────────────────────────────────── */
+.demo-scenarios { margin: 40px 0; }
+.demo-scenarios h3 { font-size: 18px; font-weight: 700; color: var(--text-primary); margin-bottom: 16px; }
+.demo-scenario-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-bottom: 20px; }
+.demo-scenario-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px 20px; font-size: 14px; color: var(--text-secondary); line-height: 1.5; cursor: default; transition: border-color 0.2s; }
+.demo-scenario-card:hover { border-color: var(--accent); color: var(--text-primary); }
+.demo-scenario-card .scenario-emoji { font-size: 24px; margin-bottom: 8px; display: block; }
+.demo-hint { font-size: 13px; color: var(--accent); font-weight: 500; }
+.demo-output-section { margin-top: 80px; padding-top: 60px; border-top: 1px solid var(--border); }
+.demo-output-section .section-subtitle { margin-bottom: 32px; }
+.demo-lead-card { background: var(--bg-card); border: 1px solid var(--border-accent); border-radius: var(--radius-lg); overflow: hidden; max-width: 600px; }
+.demo-lead-header { background: var(--bg-secondary); padding: 16px 20px; display: flex; align-items: center; gap: 12px; border-bottom: 1px solid var(--border); }
+.demo-lead-name { font-weight: 700; font-size: 16px; color: var(--text-primary); flex: 1; }
+.demo-urgency-badge { background: rgba(239, 68, 68, 0.15); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.3); border-radius: 99px; padding: 3px 10px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; }
+.demo-dmg-badge { background: var(--accent-dim); color: var(--accent); border: 1px solid var(--border-accent); border-radius: 99px; padding: 3px 10px; font-size: 11px; font-weight: 600; }
+.demo-lead-fields { padding: 20px; display: flex; flex-direction: column; gap: 10px; }
+.demo-lead-field { display: flex; gap: 16px; font-size: 14px; }
+.demo-lead-label { color: var(--text-muted); font-weight: 500; width: 90px; flex-shrink: 0; }
+.demo-lead-value { color: var(--text-primary); }
+.demo-lead-value.verified { color: #4ade80; }
+.demo-lead-value.after-hours { color: var(--orange); }
+.demo-lead-note { padding: 12px 20px; border-top: 1px solid var(--border); font-size: 13px; color: var(--text-muted); font-style: italic; }

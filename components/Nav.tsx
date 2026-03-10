@@ -33,10 +33,12 @@ export default function Nav() {
           <ul className="nav-links">
             <li><Link href="/">Home</Link></li>
             <li><Link href="/how-it-works">How It Works</Link></li>
+            <li><Link href="/pricing">Pricing</Link></li>
             <li><Link href="/contact">Contact</Link></li>
           </ul>
 
           <div className="nav-cta">
+            <Link href="/demo" className="btn-secondary">Try Demo</Link>
             <Link href="/contact" className="btn-primary">Book a Demo</Link>
           </div>
 
@@ -53,7 +55,9 @@ export default function Nav() {
       <div className={`nav-mobile${menuOpen ? " open" : ""}`}>
         <Link href="/" onClick={closeMenu}>Home</Link>
         <Link href="/how-it-works" onClick={closeMenu}>How It Works</Link>
+        <Link href="/pricing" onClick={closeMenu}>Pricing</Link>
         <Link href="/contact" onClick={closeMenu}>Contact</Link>
+        <Link href="/demo" className="btn-secondary" onClick={closeMenu}>Try Demo</Link>
         <Link href="/contact" className="btn-primary" onClick={closeMenu}>Book a Demo</Link>
       </div>
     </>
