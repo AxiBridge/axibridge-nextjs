@@ -1,17 +1,10 @@
 import type { Metadata } from "next";
-import DemoWidget from "@/components/DemoWidget";
+import HeroDemo from "@/components/HeroDemo";
 
 export const metadata: Metadata = {
-  title: "Try the Demo — AxiBridge",
+  title: "Try the Demo - AxiBridge",
   description: "Try the AxiBridge AI intake widget live. See exactly what your customers experience and what gets captured.",
 };
-
-const scenarios = [
-  { emoji: "💧", text: "My basement is flooding — burst pipe, 2am emergency" },
-  { emoji: "🔥", text: "We had a kitchen fire last night, significant smoke damage" },
-  { emoji: "🍄", text: "I found mold in my bathroom, about a square meter" },
-  { emoji: "⛈️", text: "Storm damage to my roof, water coming in" },
-];
 
 export default function DemoPage() {
   return (
@@ -22,7 +15,7 @@ export default function DemoPage() {
           <span className="section-label">Live Demo</span>
           <h1>
             <span className="text-accent">Try AxiBridge</span>{" "}
-            — right now
+            right now
           </h1>
           <p>
             This is the actual widget your customers would see on your website. Have a conversation,
@@ -32,21 +25,18 @@ export default function DemoPage() {
       </section>
 
       {/* MAIN DEMO CONTENT */}
-      <section style={{ padding: "0 24px 80px" }}>
+      <section style={{ padding: "60px 24px 80px", background: "#ffffff" }}>
         <div style={{ maxWidth: "800px", margin: "0 auto" }}>
 
-          {/* HOW TO TRY */}
-          <div className="demo-scenarios">
-            <h3>Try one of these scenarios:</h3>
-            <div className="demo-scenario-grid">
-              {scenarios.map((s) => (
-                <div key={s.text} className="demo-scenario-card">
-                  <span className="scenario-emoji">{s.emoji}</span>
-                  {s.text}
-                </div>
-              ))}
-            </div>
-            <p className="demo-hint">The widget is live in the bottom-right corner of this page →</p>
+          <div style={{ marginBottom: 40, textAlign: "center" }}>
+            <p style={{ fontSize: 14, color: "var(--text-muted)" }}>
+              Click anywhere outside the chat to close it.
+            </p>
+          </div>
+
+          {/* INTERACTIVE DEMO */}
+          <div style={{ display: "flex", justifyContent: "center", marginBottom: 64 }}>
+            <HeroDemo />
           </div>
 
           {/* WHAT GETS CAPTURED */}
@@ -61,7 +51,7 @@ export default function DemoPage() {
               <div className="demo-lead-header">
                 <span className="demo-lead-name">Sarah Mitchell</span>
                 <span className="demo-urgency-badge">Emergency</span>
-                <span className="demo-dmg-badge">Water — Burst Pipe</span>
+                <span className="demo-dmg-badge">Water. Burst Pipe</span>
               </div>
               <div className="demo-lead-fields">
                 <div className="demo-lead-field">
@@ -74,7 +64,7 @@ export default function DemoPage() {
                 </div>
                 <div className="demo-lead-field">
                   <span className="demo-lead-label">Damage</span>
-                  <span className="demo-lead-value">Water — Burst Pipe</span>
+                  <span className="demo-lead-value">Water. Burst Pipe</span>
                 </div>
                 <div className="demo-lead-field">
                   <span className="demo-lead-label">Category</span>
@@ -82,7 +72,7 @@ export default function DemoPage() {
                 </div>
                 <div className="demo-lead-field">
                   <span className="demo-lead-label">Insurance</span>
-                  <span className="demo-lead-value verified">Intact Insurance · Verified ✓</span>
+                  <span className="demo-lead-value verified">Intact Insurance · Verified</span>
                 </div>
                 <div className="demo-lead-field">
                   <span className="demo-lead-label">Received</span>
@@ -97,9 +87,6 @@ export default function DemoPage() {
 
         </div>
       </section>
-
-      {/* Live widget loader */}
-      <DemoWidget />
     </main>
   );
 }

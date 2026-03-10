@@ -2,19 +2,19 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Pricing — AxiBridge",
+  title: "Pricing - AxiBridge",
   description: "Simple monthly pricing for AxiBridge AI lead capture. $249/month, no contracts, cancel anytime.",
 };
 
 const features = [
   "24/7 AI chat widget on your website",
   "Unlimited leads captured",
-  "Smart intake — damage type, category, property info",
+  "Smart intake. Damage type, category, property info",
   "Real-time insurance verification",
   "Instant email summaries for every lead",
   "SMS alerts for emergency leads",
   "Owner dashboard with full lead history",
-  "Branded widget — your colors, your name",
+  "Branded widget. Your colors, your name",
   "Photo upload from homeowners",
   "Setup in under 10 minutes",
 ];
@@ -34,7 +34,7 @@ const faqs = [
   },
   {
     q: "Does it work with my website?",
-    a: "Yes. The widget works on any website — WordPress, Wix, Squarespace, Webflow, custom HTML, or anything else.",
+    a: "Yes. The widget works on any website. WordPress, Wix, Squarespace, Webflow, custom HTML, or anything else.",
   },
   {
     q: "What happens if a lead comes in at 3am?",

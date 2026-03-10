@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Client Portal — AxiBridge",
+  title: "Client Portal - AxiBridge",
 };
 
 export default function LoginPage() {

@@ -27,7 +27,7 @@ export default function Nav() {
                 <circle cx="20" cy="8" r="2" fill="white" stroke="none" />
               </svg>
             </div>
-            AxiBridge
+            <span style={{color: 'var(--accent)'}}>Axi</span><span style={{color: '#ffffff'}}>Bridge</span>
           </Link>
 
           <ul className="nav-links">

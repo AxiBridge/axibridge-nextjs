@@ -3,7 +3,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Book a Demo — AxiBridge",
+  title: "Book a Demo - AxiBridge",
   description: "Book a free 20-minute demo with AxiBridge. See how we capture emergency leads 24/7 for your restoration business.",
 };
 
@@ -16,7 +16,7 @@ export default function ContactPage() {
           <div className="section-label">Book a Demo</div>
           <h1>Let&apos;s get you set up in <span className="text-accent">10 minutes</span></h1>
           <p>
-            Fill out the form below and we&apos;ll reach out within one business day to schedule your free demo — or reach us directly at{" "}
+            Fill out the form below and we&apos;ll reach out within one business day to schedule your free demo, or reach us directly at{" "}
             <a href="mailto:hello@axibridge.com" style={{ color: "var(--accent)" }}>hello@axibridge.com</a>
           </p>
         </div>
@@ -52,7 +52,7 @@ export default function ContactPage() {
                   {
                     icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" /></svg>,
                     label: "Serving",
-                    value: "Canada & United States",
+                    value: "Canada",
                   },
                 ].map((d) => (
                   <div className="contact-detail" key={d.label}>
@@ -74,7 +74,7 @@ export default function ContactPage() {
                     "Insurance verification demo",
                     "Dashboard overview",
                     "Pricing breakdown (no surprises)",
-                    "Setup walkthrough — live on the call if you want",
+                    "Setup walkthrough. Live on the call if you want",
                   ].map((b) => (
                     <div className="benefit-item" key={b}>
                       <span className="benefit-dot" />
@@ -104,7 +104,7 @@ export default function ContactPage() {
           {[
             { accent: "10", suffix: " min", label: "Average setup time from signup to live" },
             { accent: "24", suffix: "/7", label: "Widget coverage, even when you're asleep" },
-            { prefix: "$", accent: "0", label: "Cost to book a demo — completely free" },
+            { prefix: "$", accent: "0", label: "Cost to book a demo. Completely free" },
             { accent: "1", suffix: " job", label: "Captured pays for months of AxiBridge" },
           ].map((s, i) => (
             <ScrollReveal key={i}>

@@ -3,7 +3,7 @@ import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata: Metadata = {
-  title: "How It Works — AxiBridge",
+  title: "How It Works - AxiBridge",
   description: "See exactly how AxiBridge captures emergency leads 24/7 for restoration companies.",
 };
 
@@ -14,7 +14,7 @@ export default function HowItWorksPage() {
       <section className="page-hero">
         <div className="page-hero-inner">
           <div className="section-label">How It Works</div>
-          <h1>From missed call to <span className="text-accent">booked job</span> — automatically</h1>
+          <h1>From missed call to <span className="text-accent">booked job</span>, automatically</h1>
           <p>AxiBridge works silently in the background of your website, capturing and qualifying every lead so you wake up to a full inbox instead of a missed opportunity.</p>
         </div>
       </section>
@@ -28,7 +28,7 @@ export default function HowItWorksPage() {
                 <polygon points="5 3 19 12 5 21 5 3" />
               </svg>
             </div>
-            <p>Product demo video — coming soon</p>
+            <p>Product demo video, coming soon</p>
           </div>
         </ScrollReveal>
       </div>
@@ -41,7 +41,7 @@ export default function HowItWorksPage() {
               {
                 n: "1",
                 title: "Embed one line of code on your website",
-                desc: "Getting started with AxiBridge is as simple as copying and pasting. We give you a single JavaScript snippet to add to your website — no developer required. It works on WordPress, Squarespace, Wix, Webflow, or any custom-built site.",
+                desc: "Getting started with AxiBridge is as simple as copying and pasting. We give you a single JavaScript snippet to add to your website. No developer required. It works on WordPress, Squarespace, Wix, Webflow, or any custom-built site.",
                 details: [
                   "Takes less than 10 minutes from signup to live",
                   "Works on any website platform",
@@ -52,12 +52,12 @@ export default function HowItWorksPage() {
               {
                 n: "2",
                 title: "AxiBridge handles all visitor intake, 24/7",
-                desc: "The moment a homeowner lands on your website — at 2am, on a Sunday, or during a holiday — the AxiBridge widget is there. It greets visitors, identifies emergencies, and guides them through a structured intake conversation. Our AI knows exactly what questions to ask for restoration jobs.",
+                desc: "The moment a homeowner lands on your website, at 2am, on a Sunday, or during a holiday, the AxiBridge widget is there. It greets visitors, identifies emergencies, and guides them through a structured intake conversation. Our AI knows exactly what questions to ask for restoration jobs.",
                 details: [
-                  "Damage type — water, fire, mold, storm",
-                  "Water category — Cat 1 (clean), Cat 2 (grey), Cat 3 (black)",
-                  "Affected area — rooms, square footage estimate",
-                  "Cause — burst pipe, flooding, sewage, fire, etc.",
+                  "Damage type. Water, fire, mold, storm",
+                  "Water category. Cat 1 (clean), Cat 2 (grey), Cat 3 (black)",
+                  "Affected area. Rooms, square footage estimate",
+                  "Cause. Burst pipe, flooding, sewage, fire, etc.",
                   "Property address and contact information",
                   "Insurance carrier name and policy number",
                 ],
@@ -65,9 +65,9 @@ export default function HowItWorksPage() {
               {
                 n: "3",
                 title: "Insurance verified in real time",
-                desc: "Before a lead ever hits your inbox, AxiBridge runs a real-time insurance verification check. We confirm that the homeowner's policy is active and covers the type of damage reported. This means your crew can dispatch with confidence — no more arriving on site to discover unverifiable coverage.",
+                desc: "Before a lead ever hits your inbox, AxiBridge runs a real-time insurance verification check. We confirm that the homeowner's policy is active and covers the type of damage reported. This means your crew can dispatch with confidence. No more arriving on site to discover unverifiable coverage.",
                 details: [
-                  "Real-time API lookup — results in seconds",
+                  "Real-time API lookup. Results in seconds",
                   "Confirms active policy status",
                   "Flags potential coverage issues before dispatch",
                   "Saves your crew time and your company money",
@@ -76,14 +76,14 @@ export default function HowItWorksPage() {
               {
                 n: "4",
                 title: "You receive a complete lead summary by email",
-                desc: "The moment intake is complete, AxiBridge sends you a structured job brief directly to your inbox. Everything is organized and ready to act on — no phone tag, no missing information, no guessing. Just call the lead back with everything you need, and dispatch your crew immediately.",
+                desc: "The moment intake is complete, AxiBridge sends you a structured job brief directly to your inbox and your dashboard. Everything is organized and ready to act on. No phone tag, no missing information, no guessing. Just call the lead back with everything you need, and dispatch your crew immediately.",
                 details: [
-                  "Homeowner contact info — name, phone, email",
+                  "Homeowner contact info. Name, phone, email",
                   "Full damage details from intake conversation",
                   "Property address and access notes",
                   "Insurance carrier, policy number, and verification status",
-                  "Urgency level — so you know what to prioritize",
-                  "Timestamp — know exactly when the lead came in",
+                  "Urgency level, so you know what to prioritize",
+                  "Timestamp, so you know exactly when the lead came in",
                 ],
               },
             ].map((step) => (
@@ -122,7 +122,7 @@ export default function HowItWorksPage() {
               <div className="email-mockup">
                 <div className="email-bar">
                   <div className="email-dots"><span /><span /><span /></div>
-                  <div className="email-title-bar">New Lead — AxiBridge Alert</div>
+                  <div className="email-title-bar">New Lead. AxiBridge Alert</div>
                 </div>
                 <div className="email-body">
                   <div className="email-header-row">
@@ -132,14 +132,14 @@ export default function HowItWorksPage() {
                       <div className="email-address">alerts@axibridge.com</div>
                     </div>
                   </div>
-                  <div className="email-subject">New Emergency Lead — Basement Flood · 44 Riverside Dr, Toronto</div>
-                  <div className="email-time-badge">Received at 2:14 AM — Tuesday</div>
+                  <div className="email-subject">New Emergency Lead. Basement Flood · 44 Riverside Dr, Toronto</div>
+                  <div className="email-time-badge">Received at 2:14 AM, Tuesday</div>
                   <div className="email-fields">
                     {[
                       { label: "Name", value: "Sarah Mitchell" },
                       { label: "Phone", value: "(416) 555-0192" },
                       { label: "Address", value: "44 Riverside Dr, Toronto, ON" },
-                      { label: "Damage Type", value: "Water — Burst Pipe" },
+                      { label: "Damage Type", value: "Water. Burst Pipe" },
                       { label: "Water Category", value: "Category 2 (Grey Water)" },
                       { label: "Affected Area", value: "Basement ~400 sq ft" },
                       { label: "Cause", value: "Burst supply line under sink" },
@@ -155,7 +155,7 @@ export default function HowItWorksPage() {
                     </div>
                     <div className="email-field">
                       <span className="email-field-label">Urgency</span>
-                      <span className="email-field-value text-orange">HIGH — Active flooding, dispatch immediately</span>
+                      <span className="email-field-value text-orange">HIGH. Active flooding, dispatch immediately</span>
                     </div>
                   </div>
                 </div>
@@ -170,7 +170,7 @@ export default function HowItWorksPage() {
         <ScrollReveal>
           <div className="cta-inner">
             <h2 className="cta-title">Ready to set it up?</h2>
-            <p className="cta-sub">Book a free 20-minute demo and we&apos;ll show you exactly how AxiBridge works for your business — and get you live the same day.</p>
+            <p className="cta-sub">Book a free 20-minute demo and we&apos;ll show you exactly how AxiBridge works for your business, and get you live the same day.</p>
             <div className="cta-buttons">
               <Link href="/contact" className="btn-primary" style={{ fontSize: "16px", padding: "16px 32px" }}>Book a Free Demo</Link>
               <Link href="/contact" className="btn-secondary" style={{ fontSize: "16px", padding: "15px 28px" }}>Contact Us</Link>

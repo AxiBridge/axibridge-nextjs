@@ -1,7 +1,15 @@
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
+import HeroDemo from "@/components/HeroDemo";
 
 export default function Home() {
+  const stats = [
+    { num: "820+", label: "Canadian homes deal with water damage every single day" },
+    { num: "40%", label: "of leads go to the first company that responds" },
+    { num: "$8K+", label: "average revenue per residential restoration job" },
+    { num: "60%", label: "of emergency calls happen outside business hours" },
+  ];
+
   return (
     <main>
       {/* HERO */}
@@ -45,83 +53,19 @@ export default function Home() {
             </div>
 
             <div className="hero-trust">
-              <span className="hero-trust-text">Trusted by restoration pros across North America</span>
+              <span className="hero-trust-text">Built for Canadian restoration companies</span>
               <div className="hero-trust-logos">
-                <span className="trust-badge">Water</span>
-                <span className="trust-badge">Fire</span>
-                <span className="trust-badge">Mold</span>
+                <span className="trust-badge">Calgary</span>
+                <span className="trust-badge">Toronto</span>
+                <span className="trust-badge">Vancouver</span>
+                <span className="trust-badge">Edmonton</span>
               </div>
             </div>
           </div>
 
           {/* Hero Visual */}
           <div className="hero-visual">
-            <div className="hero-notification">
-              <div className="notif-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
-                  <path d="M20 6L9 17l-5-5" />
-                </svg>
-              </div>
-              <div>
-                <div className="notif-title">New lead — 2:14am</div>
-                <div className="notif-sub">Basement flood · Insurance verified</div>
-              </div>
-            </div>
-
-            <div className="browser-mockup">
-              <div className="browser-bar">
-                <div className="browser-dots">
-                  <span /><span /><span />
-                </div>
-                <div className="browser-url">rapidfloodpro.com</div>
-              </div>
-              <div className="browser-body">
-                <div className="fake-site-header">
-                  <div className="fake-site-logo">Rapid<span>Flood</span>Pro</div>
-                  <div className="fake-nav-items"><div /><div /><div /></div>
-                </div>
-                <div className="fake-site-hero">
-                  <div className="fake-hero-title" />
-                  <div className="fake-hero-sub" />
-                  <div className="fake-hero-btn">Call Us Now</div>
-                </div>
-                <div className="widget-container">
-                  <div className="widget-popup">
-                    <div className="widget-header">
-                      <div className="widget-avatar">A</div>
-                      <div>
-                        <div className="widget-header-name">AxiBridge Assistant</div>
-                        <div className="widget-header-status">Online 24/7</div>
-                      </div>
-                    </div>
-                    <div className="widget-messages">
-                      <div className="widget-msg bot">Hi! We&apos;re available 24/7. Do you have an emergency?</div>
-                      <div className="widget-msg user">Yes, basement is flooding</div>
-                      <div className="widget-msg bot">I&apos;ll help right away. What&apos;s the water source?</div>
-                      <div className="widget-msg user">Broken pipe, started 20 min ago</div>
-                      <div className="widget-msg typing">
-                        <span className="typing-dot" />
-                        <span className="typing-dot" />
-                        <span className="typing-dot" />
-                      </div>
-                    </div>
-                    <div className="widget-footer">
-                      <div className="widget-input-fake">Type a message...</div>
-                      <div className="widget-send-btn">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
-                          <path d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7z" />
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="widget-bubble-btn">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
-                      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <HeroDemo />
           </div>
         </div>
       </section>
@@ -133,7 +77,7 @@ export default function Home() {
             <div className="problem-header">
               <div className="section-label">The Problem</div>
               <h2 className="section-title">Restoration companies lose their best leads after hours</h2>
-              <p className="section-subtitle">Emergency calls don&apos;t follow business hours. When no one answers, that job goes to whoever picks up first — and that&apos;s your competitor.</p>
+              <p className="section-subtitle">Emergency calls don&apos;t follow business hours. When no one answers, that job goes to whoever picks up first, and that&apos;s your competitor.</p>
             </div>
           </ScrollReveal>
 
@@ -145,7 +89,7 @@ export default function Home() {
                     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6.29 6.29l.97-.97a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
                   </svg>
                 </div>
-                <h3>Phone rings at 2am — nobody answers</h3>
+                <h3>Phone rings at 2am, nobody answers</h3>
                 <p>Homeowners with a flooded basement call the first number they find. If you don&apos;t answer, they hang up and call the next one. That job is gone forever.</p>
               </div>
             </ScrollReveal>
@@ -158,7 +102,7 @@ export default function Home() {
                   </svg>
                 </div>
                 <h3>Crew dispatched without complete info</h3>
-                <p>When intake is rushed over the phone, your crew arrives without knowing the damage type, affected areas, or what equipment to bring — wasting time and money.</p>
+                <p>When intake is rushed over the phone, your crew arrives without knowing the damage type, affected areas, or what equipment to bring, wasting time and money.</p>
               </div>
             </ScrollReveal>
 
@@ -170,7 +114,7 @@ export default function Home() {
                   </svg>
                 </div>
                 <h3>Insurance details missing at the job site</h3>
-                <p>Your crew can&apos;t start work without insurance info. When it&apos;s incomplete, you&apos;re stuck making calls, chasing paperwork, and delaying the job — frustrating everyone.</p>
+                <p>Your crew can&apos;t start work without confirmed insurance. When details are missing, jobs get delayed and clients get anxious waiting for answers.</p>
               </div>
             </ScrollReveal>
           </div>
@@ -185,14 +129,14 @@ export default function Home() {
               <div className="solution-content">
                 <div className="section-label">The Solution</div>
                 <h2 className="section-title">AxiBridge handles intake automatically. 24/7.</h2>
-                <p className="section-subtitle">While you sleep, our AI chat widget is live on your website — capturing leads, collecting every detail, and sending you a complete job brief the moment a homeowner reaches out.</p>
+                <p className="section-subtitle">While you sleep, our AI chat widget is live on your website, capturing leads and collecting every detail. You wake up to a structured lead in your dashboard and a full job brief in your inbox.</p>
 
                 <div className="solution-steps">
                   {[
-                    { n: "1", title: "Visitor lands on your website", desc: "The AxiBridge widget is always live — day or night. Emergency or not." },
-                    { n: "2", title: "AI collects all job information", desc: "Damage type, water category, affected area, cause, property address, and insurance carrier — all captured automatically." },
+                    { n: "1", title: "Visitor lands on your website", desc: "The AxiBridge widget is always live, day or night, emergency or not." },
+                    { n: "2", title: "AI collects all job information", desc: "Damage type, water category, affected area, cause, property address, and insurance carrier, all captured automatically." },
                     { n: "3", title: "Insurance verified in real time", desc: "Coverage is checked via API before your crew ever leaves the yard." },
-                    { n: "4", title: "You receive a complete lead summary", desc: "Wake up to a full job brief in your inbox — contact info, damage details, insurance status, and urgency level ready to act on." },
+                    { n: "4", title: "You receive a complete lead summary", desc: "Wake up to a full job brief in your inbox and your dashboard. Contact info, damage details, insurance status, and urgency level ready to act on." },
                   ].map((step) => (
                     <div className="solution-step" key={step.n}>
                       <div className="step-line-wrapper">
@@ -214,7 +158,7 @@ export default function Home() {
                 <div className="email-mockup">
                   <div className="email-bar">
                     <div className="email-dots"><span /><span /><span /></div>
-                    <div className="email-title-bar">Inbox — hello@rapidfloodpro.com</div>
+                    <div className="email-title-bar">Inbox. hello@rapidfloodpro.com</div>
                   </div>
                   <div className="email-body">
                     <div className="email-header-row">
@@ -224,15 +168,15 @@ export default function Home() {
                         <div className="email-address">alerts@axibridge.com</div>
                       </div>
                     </div>
-                    <div className="email-subject">New Emergency Lead — Basement Flood, Riverside Drive</div>
+                    <div className="email-subject">New Emergency Lead. Basement Flood, Riverside Drive</div>
                     <div className="email-time-badge">Received at 2:14 AM</div>
                     <div className="email-fields">
                       <div className="email-field"><span className="email-field-label">Contact</span><span className="email-field-value">Sarah M. · (416) 555-0192</span></div>
                       <div className="email-field"><span className="email-field-label">Address</span><span className="email-field-value">44 Riverside Dr, Toronto</span></div>
-                      <div className="email-field"><span className="email-field-label">Damage Type</span><span className="email-field-value">Water — Burst Pipe</span></div>
+                      <div className="email-field"><span className="email-field-label">Damage Type</span><span className="email-field-value">Water. Burst Pipe</span></div>
                       <div className="email-field"><span className="email-field-label">Category</span><span className="email-field-value">Cat 2 · ~400 sq ft</span></div>
                       <div className="email-field"><span className="email-field-label">Insurance</span><span className="email-field-value insurance-verified">Intact Insurance · Verified</span></div>
-                      <div className="email-field"><span className="email-field-label">Urgency</span><span className="email-field-value text-orange">HIGH — Dispatch immediately</span></div>
+                      <div className="email-field"><span className="email-field-label">Urgency</span><span className="email-field-value text-orange">HIGH. Dispatch immediately</span></div>
                     </div>
                   </div>
                 </div>
@@ -249,18 +193,18 @@ export default function Home() {
             <div className="features-header">
               <div className="section-label">Features</div>
               <h2 className="section-title">Everything your team needs, handled automatically</h2>
-              <p className="section-subtitle">AxiBridge does the work of a full-time intake coordinator — at a fraction of the cost, available 24/7.</p>
+              <p className="section-subtitle">AxiBridge does the work of a full-time intake coordinator, at a fraction of the cost, available 24/7.</p>
             </div>
           </ScrollReveal>
 
           <div className="features-grid">
             {[
-              { icon: "clock", title: "24/7 Emergency Capture", desc: "The widget never sleeps. Emergency leads at 2am, on weekends, on holidays — captured automatically so you never miss a job." },
-              { icon: "chat", title: "Smart AI Intake", desc: "Asks the right questions every time — damage type, water category (Cat 1/2/3), affected area, cause, and property address. No detail missed." },
-              { icon: "shield", title: "Insurance Verification", desc: "Real-time API checks coverage before your crew dispatches — so you arrive job-ready with no paperwork surprises." },
-              { icon: "email", title: "Instant Email Summary", desc: "The moment a lead completes intake, you get a full job brief in your inbox — contact info, damage details, insurance status, and urgency level." },
-              { icon: "dashboard", title: "Owner Dashboard", desc: "See all your leads, after-hours captures, and conversion stats in one place. Know exactly how many jobs you would have missed without AxiBridge." },
-              { icon: "code", title: "One-Line Setup", desc: "Paste one line of code onto your website and you're live. Works on any website builder — no developers needed. Setup takes under 10 minutes." },
+              { icon: "clock", title: "24/7 Emergency Capture", desc: "The widget never sleeps. Emergency leads at 2am, on weekends, on holidays, captured automatically so you never miss a job." },
+              { icon: "chat", title: "Smart AI Intake", desc: "Asks the right questions every time. Damage type, water category (Cat 1/2/3), affected area, cause, and property address. No detail missed." },
+              { icon: "shield", title: "Insurance Verification", desc: "Real-time API checks coverage before your crew dispatches, so you arrive job-ready with no paperwork surprises." },
+              { icon: "email", title: "Instant Email Summary", desc: "The moment a lead completes intake, you get a full job brief in your inbox. Contact info, damage details, insurance status, and urgency level." },
+              { icon: "dashboard", title: "Owner Dashboard", desc: "Every lead flows into your private dashboard. Track status, view full conversation transcripts, see insurance results, and update lead status from new to converted. Your team always knows what's happening." },
+              { icon: "code", title: "One-Line Setup", desc: "Paste one line of code onto your website and you're live. The widget uses your business name and your brand color, so it looks like it belongs. Setup takes under 10 minutes." },
             ].map((f) => (
               <ScrollReveal key={f.title}>
                 <div className="feature-card">
@@ -279,15 +223,10 @@ export default function Home() {
       {/* STATS */}
       <section className="section-stats">
         <div className="stats-grid">
-          {[
-            { num: "14,", accent: "000", label: "households experience water damage daily in the US" },
-            { num: "", accent: "40", suffix: "%", label: "of leads go to the first company that responds" },
-            { num: "$", accent: "5K", suffix: "+", label: "average revenue per residential restoration job" },
-            { num: "", accent: "60", suffix: "%", label: "of emergency calls happen outside business hours" },
-          ].map((s, i) => (
+          {stats.map((s, i) => (
             <ScrollReveal key={i}>
               <div className="stat-item">
-                <div className="stat-number">{s.num}<span>{s.accent}</span>{s.suffix}</div>
+                <div className="stat-number">{s.num}</div>
                 <div className="stat-label">{s.label}</div>
               </div>
             </ScrollReveal>
@@ -307,10 +246,10 @@ export default function Home() {
           </ScrollReveal>
           <div className="how-steps">
             {[
-              { n: "1", title: "Embed one line of code", desc: "Paste a single script tag into your website. Works on any platform — WordPress, Squarespace, Wix, or custom sites." },
-              { n: "2", title: "AxiBridge goes live 24/7", desc: "The branded chat widget appears on your site automatically. Visitors can start a conversation anytime — day or night." },
-              { n: "3", title: "AI handles all intake", desc: "Our AI collects damage details, property info, and insurance information — and verifies coverage in real time." },
-              { n: "4", title: "You get the lead summary", desc: "You receive a complete job brief by email — everything you need to call back with confidence and dispatch your crew immediately." },
+              { n: "1", title: "Embed one line of code", desc: "Paste a single script tag into your website. Works on any platform. WordPress, Squarespace, Wix, or custom sites." },
+              { n: "2", title: "AxiBridge goes live 24/7", desc: "The branded chat widget appears on your site automatically. Visitors can start a conversation anytime, day or night." },
+              { n: "3", title: "AI handles all intake", desc: "Our AI collects damage details, property info, and insurance information, and verifies coverage in real time." },
+              { n: "4", title: "You get the lead summary", desc: "You receive a complete job brief by email and in your dashboard. Contact info, damage details, insurance status, and urgency level. Ready to act on immediately." },
             ].map((step) => (
               <ScrollReveal key={step.n}>
                 <div className="how-step">
@@ -339,11 +278,11 @@ export default function Home() {
                 <div className="pricing-features">
                   {[
                     "24/7 AI chat widget on your website",
-                    "Smart intake — damage type, category, property info",
+                    "Smart intake. Damage type, category, property info",
                     "Real-time insurance verification",
                     "Instant email summaries for every lead",
                     "Owner dashboard with lead history and stats",
-                    "Branded widget — your colors, your name",
+                    "Branded widget. Your colors, your name",
                   ].map((feat) => (
                     <div className="pricing-feature" key={feat}>
                       <div className="pricing-check">
@@ -368,7 +307,7 @@ export default function Home() {
         <div className="cta-inner">
           <ScrollReveal>
             <h2 className="cta-title">Ready to stop losing emergency leads?</h2>
-            <p className="cta-sub">Every missed call is a missed job. AxiBridge makes sure every lead is captured, qualified, and in your inbox — even at 2am.</p>
+            <p className="cta-sub">Every missed call is a missed job. AxiBridge makes sure every lead is captured, qualified, and in your inbox, even at 2am.</p>
             <div className="cta-buttons">
               <Link href="/contact" className="btn-primary" style={{ fontSize: "16px", padding: "16px 32px" }}>Book a Free Demo</Link>
               <Link href="/how-it-works" className="btn-secondary" style={{ fontSize: "16px", padding: "15px 28px" }}>See How It Works</Link>

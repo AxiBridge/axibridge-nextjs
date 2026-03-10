@@ -7,11 +7,11 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
-  title: "AxiBridge — AI Intake for Restoration Companies. 24/7.",
+  title: "AxiBridge - AI Intake for Restoration Companies. 24/7.",
   description:
     "AxiBridge captures emergency leads 24/7 for water, fire, and mold restoration companies. AI-powered intake, insurance verification, and instant email summaries.",
   openGraph: {
-    title: "AxiBridge — Never Miss an Emergency Lead Again",
+    title: "AxiBridge - Never Miss an Emergency Lead Again",
     description: "AI-powered intake and lead capture for restoration companies. 24/7 emergency coverage.",
     type: "website",
   },
